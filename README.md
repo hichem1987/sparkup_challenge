@@ -1,3 +1,4 @@
+### ceci est une version du code non obfusqué
 ### Commandes nécessaires pour l'exécution du projet
 ```
 npm install

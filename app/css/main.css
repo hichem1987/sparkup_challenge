@@ -1,4 +1,17 @@
-#gmaps {
-    width: 900px;
-    height: 600px;
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#gmaps, .map_container{
+    width: 100%;
+    height: 100%;
+}
+.gm-style-iw {
+    text-align: center;
+}
+.infowindow-content {
+    height: 230px!important;
 }

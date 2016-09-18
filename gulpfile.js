@@ -10,12 +10,12 @@ var clean = require('gulp-clean');
 var runSequence = require('run-sequence');
 
 // tasks
-gulp.task('lint', function() {
-  gulp.src(['./app/**/*.js', '!./app/bower_components/**'])
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-    .pipe(jshint.reporter('fail'));
-});
+//gulp.task('lint', function() {
+//  gulp.src(['./app/**/*.js', '!./app/bower_components/**'])
+//    .pipe(jshint())
+//    .pipe(jshint.reporter('default'))
+//    .pipe(jshint.reporter('fail'));
+//});
 gulp.task('clean', function() {
     gulp.src('./dist/*')
       .pipe(clean({force: true}));
@@ -57,8 +57,11 @@ gulp.task('connectDist', function () {
 
 
 // default task
+//gulp.task('default',
+//  ['lint', 'connect']
+//);
 gulp.task('default',
-  ['lint', 'connect']
+  [ 'connect']
 );
 gulp.task('build', function() {
   runSequence(

@@ -3,7 +3,7 @@
 'use strict';
 
 
-  var app = angular.module('SampleApp', ['ngRoute', 'ngAnimate']);
+  var app = angular.module('SampleApp', ['ngRoute', 'ngAnimate', 'openWeatherApp.services', 'openWeatherApp.directives', 'iso-3166-country-codes']);
 
     app.config([
     '$locationProvider',
@@ -14,15 +14,13 @@
       $routeProvider
         .when("/", {
           templateUrl: "./partials/partial1.html",
-          controller: "MainController"
+          controller: "OpenWeatherCtrl"
         })
         .otherwise({
            redirectTo: '/'
         });
     }
   ]);
-
-  //Load controller
   app.controller('MainController', [
     '$scope',
     function($scope) {

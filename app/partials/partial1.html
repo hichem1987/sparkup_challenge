@@ -1,1 +1,20 @@
 <div my-map=""></div>
+
+<div class='div_position' ng-show="forecast !== 0 && forecast !== undefined && forecast !== null">
+    <div class="weather-data" ng-show="true">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="nom_ville">
+                    <h3>
+                        {{forecast.city.name}}, {{forecast.city.country| isoCountry}}
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-md-10 col-lg-10 col-sm-10">
+                <div weather-panel="forecast" show-entry="forecast.list[0]"></div>
+            </div>
+        </div>
+    </div>    
+</div>

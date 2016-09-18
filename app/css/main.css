@@ -13,5 +13,29 @@ html, body{
     text-align: center;
 }
 .infowindow-content {
-    height: 230px!important;
+    height: 230px;
+}
+.div_position{
+    position: absolute; top:50px;     left: 10px;; width: 400px; background-color:none;
+}
+@media (max-width:768px){
+    body {
+        font-size: 10px;
+    }
+    .div_position {
+        bottom: 0;
+        left: 10px;
+        top:auto;
+        position: absolute;
+        width: 200px;
+    }
+    .lead {
+        font-size: 13px;
+    }
+    .panel-heading {
+        padding: 5px 10px;
+    }
+    .nom_ville h3 {
+        font-size: 18px;
+    }
 }

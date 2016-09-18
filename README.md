@@ -6,7 +6,7 @@ npm install
 ```
 bower install
 ```
-### le port utilisé après l'exécution du gulp (les task pas encore mise en point)
+### le port utilisé après l'exécution du gulp (les autres tasks ne sont pas encore mise en point)
 ```
-port 8888
+ gulp default // port 8888
 ```
